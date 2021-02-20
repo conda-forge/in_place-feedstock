@@ -5,7 +5,7 @@ Home: https://github.com/jwodder/inplace
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/in_place-feedstock/blob/master/LICENSE.txt)
 
 Summary: In-place file processing in Python
 
