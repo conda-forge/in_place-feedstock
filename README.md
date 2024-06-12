@@ -9,6 +9,8 @@ Package license: MIT
 
 Summary: In-place file processing in Python
 
+Development: https://github.com/jwodder/inplace
+
 The in_place module provides an InPlace class for reading &
 writing a file "in-place": data that you write ends up at the
 same filepath that you read from, and in_place takes care of
