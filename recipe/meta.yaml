@@ -10,20 +10,28 @@ source:
   sha256: 503048e91e0736cb092787c8017dce1328a62421f8fb81c29d25854c355af5ac
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - python >=3.6
+    - python >=3.8
 
 test:
+  requires:
+    - pytest
+    - pytest-cov
+  source_files:
+    - test
+    - tox.ini
   imports:
     - in_place
+  commands:
+    - python -m pytest -vv test
 
 about:
   home: https://github.com/jwodder/inplace
@@ -32,10 +40,11 @@ about:
   license_file: LICENSE
   summary: In-place file processing in Python
   description: |
-    The in_place module provides an InPlace class for reading & 
-    writing a file "in-place": data that you write ends up at the 
-    same filepath that you read from, and in_place takes care of 
+    The in_place module provides an InPlace class for reading &
+    writing a file "in-place": data that you write ends up at the
+    same filepath that you read from, and in_place takes care of
     all the necessary mucking about with temporary files for you.
+  dev_url: https://github.com/jwodder/inplace
 
 extra:
   recipe-maintainers:
