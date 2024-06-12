@@ -32,9 +32,9 @@ about:
   license_file: LICENSE
   summary: In-place file processing in Python
   description: |
-    The in_place module provides an InPlace class for reading & 
-    writing a file "in-place": data that you write ends up at the 
-    same filepath that you read from, and in_place takes care of 
+    The in_place module provides an InPlace class for reading &
+    writing a file "in-place": data that you write ends up at the
+    same filepath that you read from, and in_place takes care of
     all the necessary mucking about with temporary files for you.
 
 extra:
