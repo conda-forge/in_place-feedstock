@@ -22,8 +22,16 @@ requirements:
     - python >=3.8
 
 test:
+  requires:
+    - pytest
+    - pytest-cov
+  source_files:
+    - test
+    - tox.ini
   imports:
     - in_place
+  commands:
+    - python -m pytest -vv test
 
 about:
   home: https://github.com/jwodder/inplace
