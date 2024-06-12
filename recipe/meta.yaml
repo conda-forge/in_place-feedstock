@@ -44,6 +44,7 @@ about:
     writing a file "in-place": data that you write ends up at the
     same filepath that you read from, and in_place takes care of
     all the necessary mucking about with temporary files for you.
+  dev_url: https://github.com/jwodder/inplace
 
 extra:
   recipe-maintainers:
