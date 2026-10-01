@@ -1,13 +1,13 @@
 {% set name = "in_place" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4b0b2b9073c3e7a116f819f7f51711b56216b24b67be57cfcdfe717400bc8743
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 02c59235d3bcb8cba98c61e8b8fa0526d4f22e36490f9c410669e050e0056b94
 
 build:
   number: 0
